@@ -3,6 +3,8 @@ import jwt from 'jsonwebtoken'
 
 export async function POST(request: NextRequest) {
     const { uid } = await request.json()
+    // node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+
 
     if (uid) {
         const usr = {
